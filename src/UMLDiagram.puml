@@ -1,0 +1,27 @@
+@startuml
+
+class ShortLister {
+    + main(String[] args)
+}
+
+class BigRectangleFilter implements Filter {
+    + accept(Object x)
+}
+
+class ShortWordFilter implements Filter {
+    + accept(Object x)
+}
+
+class ListFilterUtil {
+    + collectAll(List<T> objects, Filter filter): List<T>
+}
+
+interface Filter {
+    + accept(Object x): boolean
+}
+
+class BigRectLister {
+    + main(String[] args)
+}
+
+@enduml
